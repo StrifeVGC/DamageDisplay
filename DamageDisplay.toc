@@ -1,0 +1,12 @@
+## Interface: 12005
+## Title: DamageDisplay
+## Notes: Displays damage dealt by player and pets
+## Author: YourName
+## Version: 1.0
+
+core/frame.lua
+core/events.lua
+core/utils.lua
+core/data.lua
+
+DamageDisplay.lua
