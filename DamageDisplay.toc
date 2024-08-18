@@ -1,12 +1,12 @@
-## Interface: 12005
-## Title: DamageDisplay
-## Notes: Displays damage dealt by player and pets
-## Author: YourName
-## Version: 1.0
+## Interface: 11403
+## Title: MyResizableFrame
+## Notes: A simple resizable frame
 
-core/frame.lua
-core/events.lua
-core/utils.lua
-core/data.lua
+core\CombatLogServices\Constants\CombatLogConstants.lua
+core\CombatLogServices\Utils\CombatLogUtils.lua
+core\CombatLogServices\Utils\TextCreationUtils.lua
+core\CombatLogServices\OutgoingDamageService.lua
+core\frames\DamageDisplayScrollingFrame\DamageDisplayScrollingText.lua
+core\frames\DamageDisplayScrollingFrame\DamageDisplayScrollingText.xml
 
 DamageDisplay.lua

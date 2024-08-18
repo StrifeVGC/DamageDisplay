@@ -1,11 +1,8 @@
--- DamageDisplay.lua
+DamageDisplayScrollingFrame = {}
 
--- Ensure core modules are loaded
-local frame = DamageDisplayFrame
+local frame = _G["DamageDisplayScrollingText"]
+DamageDisplayScrollingFrame.DamageDisplayScrollingText = frame
 
--- Initialize the frame and events
 if frame then
-    frame.Initialize()
-else
-    print("Error: DamageDisplayFrame is not loaded.")
+    frame:SetPoint("CENTER", UIParent, "CENTER")
 end

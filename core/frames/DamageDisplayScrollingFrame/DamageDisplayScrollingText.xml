@@ -1,0 +1,29 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+https://raw.githubusercontent.com/Meorawr/wow-ui-schema/main/UI.xsd">
+    <ScrollingMessageFrame name="DamageDisplayScrollingText" mixin="DamageDisplayMixin" parent="UIParent"
+        enableMouse="true" hyperlinksEnabled="true">
+        <Size x="425" y="200" />
+        <Frames>
+            <EventFrame parentKey="ScrollBar" inherits="MinimalScrollBar" alpha="0">
+                <Anchors>
+                    <Anchor point="TOPRIGHT" x="-8" y="-6" />
+                    <Anchor point="BOTTOMRIGHT" x="-8" y="6" />
+                </Anchors>
+            </EventFrame>
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture parentKey="Background" setAllPoints="true" alpha="0.25">
+                    <Color r="0" g="0" b="0" a="1" />
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad method="OnLoad" />
+            <OnEvent method="OnCombatLogEvent" />
+            <!-- Enable dragging -->
+            <OnMouseDown method="StartMoving" />
+            <OnMouseUp method="StopMovingOrSizing" />
+        </Scripts>
+    </ScrollingMessageFrame>
+</Ui>
